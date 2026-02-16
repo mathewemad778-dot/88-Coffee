@@ -1,0 +1,141 @@
+
+/* ==== Fade In Animation ==== */
+@keyframes fadeUp {
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ==== Nsvbar Animation ==== */
+.navbar{
+    animation: fadeUp 1s ease;
+}
+
+.navbar a{
+    position: relative;
+    transition: 0.3s;
+}
+
+.navbar a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: #c59d5f;
+    transition: 0.3s;
+}
+
+.navbar a:hover::after{
+    width: 100%;
+}
+
+/* ==== Hero Text Animation ==== */
+
+.hero-content h1,
+.hero-content p,
+.btn-primary {
+    animation: fadeUp 1.2s ease forwards;
+}
+
+
+/* ==== Button Glow Hover ==== */
+
+.btn-primary {
+    transition: 0.3s;
+}
+
+.btn-primary:hover{
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(197, 157, 95, 0.5)
+}
+
+
+/* ==== Menu Cards Hover ==== */
+.menu-card{
+    transition: 0.35s ease;
+    animation: fadeUp 1s ease;
+}
+
+.menu-card:hover{
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ==== About Section ==== */
+.about{
+    animation: fadeUp 1s ease;
+}
+
+
+/* ==== Hours ==== */
+
+.day{
+    transition: 0.3s;
+}
+
+.day:hover{
+    transform: scale(1.05);
+    background: rgba(0, 0, 0, 0.05);
+}
+
+
+/* ==== Contact Form Animation ==== */
+
+.contact-form input{
+    transition: 0.3s;
+}
+
+.contact-form textarea{
+    transition: 0.3s;
+}
+
+.contact-form input:focus{
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(197, 157, 95, 0.4);
+    outline: none;
+}
+
+.contact-form textarea:focus{
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(197, 157, 95, 0.4);
+    outline: none;
+}
+
+.contact-form button{
+    transition: 0.3s;
+}
+
+.contact-form button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2)
+}
+
+/* ==== Footer Hover ==== */
+
+.footer-links a{
+    transition: 0.3s;
+}
+
+.footer-links a:hover{
+    color: #c59d5f;
+    transform: translateY(-2px);
+}
+
+
+/* ==== Section Scroll Animation ==== */
+
+.menu,
+.about,
+.hours,
+.contact{
+    animation: fadeUp 1s ease;
+}
